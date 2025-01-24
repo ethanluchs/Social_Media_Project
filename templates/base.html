@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Social Media Insights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='questionnaire_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='insights_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about_style.css') }}">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-content">
+                <h1 class="site-title">Social Media Insights</h1>
+            </div>
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link {% if request.endpoint == 'home_page' %}active{% endif %}">Home</a></li>
+                    <li><a href="/questionnaire" class="nav-link {% if request.endpoint == 'questionnaire' %}active{% endif %}">Questionnaire</a></li>
+                    <li><a href="/insights" class="nav-link {% if request.endpoint == 'insights' %}active{% endif %}">Insights</a></li>
+                    <li><a href="/about" class="nav-link {% if request.endpoint == 'about' %}active{% endif %}">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Include base styles from homepage_style.css */
+@import url("homepage_style.css");
+
+/* Questionnaire-specific styles */
+.questionnaire-container {
+    padding: 20px;
+}
+
+.form {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(15,100,101);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    resize: none;
+    overflow-y: auto;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: rgb(12, 86, 87);
+    box-shadow: 0 0 0 3px rgba(12, 86, 87, 0.1);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Primary action button (Submit) */
+input[type="submit"] {
+    padding: 12px 40px;  /* Slightly wider padding */
+    background: rgb(12,86,87);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;  /* Slightly larger font */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(12, 86, 87, 0.3);  /* Add depth */
+    position: relative;
+    z-index: 2;  /* Ensure it appears above the secondary button */
+}
+
+input[type="submit"]:hover {
+    background: rgb(15,100,101);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(12, 86, 87, 0.4);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(12, 86, 87, 0.3);
+}
+
+/* Secondary action button (View Insights) */
+.insights-btn {
+    padding: 12px 30px;
+    background: transparent;
+    color: rgb(12,86,87);
+    border: 2px solid rgb(12,86,87);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.insights-btn:hover {
+    background: rgba(12, 86, 87, 0.1);
+    color: rgb(12,86,87);
+    transform: translateY(-1px);
+}
+
+.insights-btn:active {
+    transform: translateY(0);
+}
+
+/* Update the existing submit button styling to work with the new layout */
+input[type="submit"] {
+    margin: 0; /* Remove the auto margin since we're using flexbox */
+}
+
+.counter {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.required-notice {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.asterisk {
+    color: rgb(15,100,101);
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    animation: fadeIn 0.5s ease-out backwards;
+    animation-delay: calc(var(--i) * 0.1s);
+}

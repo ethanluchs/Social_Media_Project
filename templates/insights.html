@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Insights{% endblock %}
+
+{% block content %}
+<div class="insights-container">
+    <h1>Your Personalized Instagram Insights</h1>
+    
+    <div class="content-box">
+        <div class="upload-section">
+            <h2>Upload Your Data Files</h2>
+            <div class="file-upload-container">
+                <div class="file-upload-group">
+                    <label>Questionnaire Responses (.txt file)</label>
+                    <input type="file" accept=".txt" class="file-input" id="questionnaireFile">
+                    <span class="file-name">No file chosen</span>
+                </div>
+                
+                <div class="file-upload-group">
+                    <label>Instagram Account Info (.html file)</label>
+                    <input type="file" accept=".html" class="file-input" id="accountInfoFile">
+                    <span class="file-name">No file chosen</span>
+                </div>
+
+                <div class="file-upload-group">
+                    <label>Instagram Activity (.html file)</label>
+                    <input type="file" accept=".html" class="file-input" id="activityFile">
+                    <span class="file-name">No file chosen</span>
+                </div>
+
+                <div class="file-upload-group">
+                    <label>Instagram Connections (.html file)</label>
+                    <input type="file" accept=".html" class="file-input" id="connectionsFile">
+                    <span class="file-name">No file chosen</span>
+                </div>
+
+                <div class="file-upload-group">
+                    <label>Instagram Content (.html file)</label>
+                    <input type="file" accept=".html" class="file-input" id="contentFile">
+                    <span class="file-name">No file chosen</span>
+                </div>
+
+                <button id="analyzeButton" class="analyze-btn">Analyze Data</button>
+            </div>
+        </div>
+
+        <div class="insights-results">
+            <div class="insight-section" data-section="social_connection">
+                <h2>Social Connection Analysis</h2>
+                <textarea class="insight-text" readonly></textarea>
+            </div>
+        
+            <div class="insight-section" data-section="goal_focus">
+                <h2>Goal Focus & Personal Growth</h2>
+                <textarea class="insight-text" readonly></textarea>
+            </div>
+        
+            <div class="insight-section" data-section="self_worth">
+                <h2>Protecting Self-Worth</h2>
+                <textarea class="insight-text" readonly></textarea>
+            </div>
+        
+            <div class="insight-section" data-section="moderation">
+                <h2>Mindful Moderation</h2>
+                <textarea class="insight-text" readonly></textarea>
+            </div>
+        </div>
+
+            <div class="button-container">
+                <a href="/about" class="next-btn">Learn More About Our Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

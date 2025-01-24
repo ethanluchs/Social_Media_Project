@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="about-container">
+    <h1>About Social Media Insights</h1>
+
+    <div class="content-box">
+        <!-- Creator Section -->
+        <section class="about-section">
+            <h2>About the Creator</h2>
+            <div class="creator-info">
+                <div class="creator-profile">
+                    <div class="creator-details">
+                        <h3>Ethan Luchs</h3>
+                        <p>I am a student at Virginia Tech majoring in Computer Science with a minor in Human-Computer
+                            Interaction.
+                            This project was created as part of my exploration into how we can better understand
+                            our relationships with social media through data-driven insights and self-reflection. If you have
+                            any questions, comments, or concerns regarding this website, feel free to reach out to me.</p>
+
+                        <div class="contact-info">
+                            <h4>Contact Information:</h4>
+                            <p>Email: ethanluchs@vt.edu</p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/ethanluchs" target="_blank">Ethan Luchs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section class="about-section">
+            <h2>Research Background</h2>
+            <p>This project was inspired by research in the fields of:</p>
+            <ul>
+                <li>Digital Wellbeing: Understanding how social media usage patterns affect mental health and personal
+                    relationships</li>
+                <li>Self-Reflection Through Data: Using personal data to gain insights into behavior patterns and habits
+                </li>
+                <li>Human-Computer Interaction: Designing interfaces that encourage mindful technology use</li>
+            </ul>
+            <p>Key research that influenced this project includes studies on social comparison on social media,
+                the impact of Instagram on self-esteem, and strategies for maintaining healthy digital boundaries.</p>
+        </section>
+
+        <!-- Privacy Section -->
+        <section class="about-section">
+            <h2>Privacy & Data Security</h2>
+            <div class="privacy-info">
+                <p>Your privacy is our top priority. Here's what you should know about how we handle your data:</p>
+                <ul>
+                    <li>All data analysis is performed locally in your browser</li>
+                    <li>We do not store or transmit any of your Instagram data or questionnaire responses</li>
+                    <li>No personal information is collected or shared with third parties</li>
+                    <li>Your data is only used to generate insights during your active session</li>
+                </ul>
+                <div class="privacy-note">
+                    <p>For questions or concerns about data handling, please contact me at ethanluchs@vt.edu</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

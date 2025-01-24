@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Questionnaire{% endblock %}
+
+{% block content %}
+<div class="questionnaire-container">
+    <h1>Social Media Habits Questionnaire</h1>
+    <div class="required-notice">
+        <span class="asterisk"></span>* All questions are required * Maximum 450 characters * <br><br> When you press
+        submit, a .txt file will be downloaded to your laptop with all of your answers.
+    </div>
+    <div class="form">
+        <form id="questionnaireForm">
+            <div class="form-group">
+                <label>How does Instagram help or hinder your relationships with friends, family, or your
+                    community?</label>
+                <textarea maxlength="450" name="social_connection" required></textarea>
+                <div class="counter">0/450 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label>In what ways does Instagram impact your self-esteem or lead to comparisons with others?</label>
+                <textarea maxlength="450" name="self_esteem" required></textarea>
+                <div class="counter">0/450 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label>What strategies do you use to manage your time, set boundaries, or limit overwhelming content on
+                    Instagram?</label>
+                <textarea maxlength="450" name="strategies" required></textarea>
+                <div class="counter">0/450 characters</div>
+            </div>
+
+            <div class="form-group">
+                <label>How does the content you follow or engage with on Instagram inspire or motivate your personal or
+                    professional growth?</label>
+                <textarea maxlength="450" name="growth" required></textarea>
+                <div class="counter">0/450 characters</div>
+            </div>
+
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <a href="/insights" class="insights-btn">View Insights</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

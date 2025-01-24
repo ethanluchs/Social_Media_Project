@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Welcome to Social Media Insights</h1>
+    </header>
+
+    <div class="content">
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Learn About Your Relationship with Instagram</h2>
+            <p>
+                Have you ever wondered how your time on Instagram reflects your habits, interests, and emotional
+                well-being?
+                By analyzing your Instagram data, you can uncover patterns that shape your online experience and better
+                understand
+                the influence social media has on your daily life. Empower yourself with meaningful insights to make
+                Instagram
+                work for you—not the other way around.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Purpose Section -->
+        <section id="purpose">
+            <h2>Our Purpose: Help You Gain Control</h2>
+            <p>
+                This site is designed to help you reflect on your Instagram usage through data-driven insights. By
+                combining your
+                Instagram data with personalized feedback, you'll learn:
+            </p>
+            <ul>
+                <li>How Instagram impacts your relationships and self-esteem.</li>
+                <li>What inspires you and motivates your growth.</li>
+                <li>Strategies to use Instagram more positively and mindfully.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Process Section -->
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>Discover insights in three simple steps:</p>
+            <ol>
+                <li><strong>Download Your Instagram Data:</strong> Get your Instagram activity from the past 3 months in
+                    a structured format.</li>
+                <li><strong>Answer the Questionnaire:</strong> Provide information about your habits and experiences.
+                </li>
+                <li><strong>Receive Personalized Insights:</strong> Gain meaningful feedback and actionable advice.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Guide to Download Instagram Data -->
+        <section id="guide">
+            <h2>Guide to Downloading Your Instagram Data</h2>
+            <p>Follow these steps to request and download your Instagram data for the past 3 months:</p>
+            <ol>
+                <li>
+                    <strong>Log in to Instagram:</strong> Open the Instagram app or visit
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram.com</a>.
+                </li>
+                <li>
+                    <strong>Navigate to Privacy Settings:</strong>
+                    <ul>
+                        <li>
+                            On your profile, select <em>Settings > Meta Accounts Center > Your Information and Permissions</em>, 
+                            then click on <em>Download Your Information</em>.
+                        </li>
+                        <li>
+                            Press the button labeled <strong>"Download or Transfer Information"</strong>. Then:
+                            <ul>
+                                <li>Select the option to download <strong>all available information</strong>.</li>
+                                <li>Under <strong>Date Range</strong>, choose <strong>3 months</strong>.</li>
+                                <li>Enter a valid email address to receive your data.</li>
+                                <li>For the format, select <strong>JSON</strong>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <strong>Wait for Your Data:</strong> Instagram will email you a download link within 48 hours. Be 
+                    sure to check your spam/junk folder if you don't see it.
+                </li>
+                <li>
+                    <strong>Download and Unzip the File:</strong> Save the file to your device, then right-click to unzip the file on your computer.
+                </li>
+            </ol>
+            <p>Once you have your data ready, come back here to start your journey!</p>
+        </section>
+
+        <hr>
+
+        <!-- Link to Instagram -->
+        <section id="instagram-link">
+            <h2>Get Started</h2>
+            <p>
+                To begin, download your Instagram data directly from the official Instagram website.
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    Visit Instagram
+                </a> to request your data.
+            </p>
+            <div class="button-container">
+                <a href="/questionnaire" class="btn">Go to Questionnaire</a>
+            </div>
+        </section>
+    </div>
+{% endblock %}
